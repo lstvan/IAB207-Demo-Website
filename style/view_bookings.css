@@ -1,0 +1,201 @@
+html, body {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    padding: 0%;
+    margin: 0%;
+    background-color: #F8F6F6;
+}
+
+header {
+    position: relative;
+    height: auto;
+    width: 100%;
+    padding: 0%;
+    margin: 0%;
+}
+
+nav {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: auto;
+    width: 100%;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 400;
+    font-size: 15px;
+    background-color: #CF4647;
+    box-shadow: 0px 0px 10px 2.5px #2A363B99;
+    z-index: 1;
+}
+
+.navbar-brand {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 700;
+    font-size: 15px;
+    color: #2A363B;
+}
+
+main {
+    position: relative;
+    height: auto;
+    width: 100%;
+    padding: 0%;
+    margin: 0%;
+}
+
+.return-button {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 500;
+    font-size: 15px;
+    color: #E6E7E8;
+}
+
+.header-text {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 700;
+    font-size: 35px;
+    color: #2A363B;
+}
+
+.sub-header-text {
+    font-family: 'Roboto Mono', monospace;
+    letter-spacing: 2.5px;
+    font-weight: 300;
+    font-size: 20px;
+    color: #2A363B;
+    padding-bottom: 0%;
+    margin: 0%;
+}
+
+.card-column {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    display: flex;
+    position: relative;
+    align-items: flex-start;
+    justify-content: center;
+    height: 325px;
+    width: 240px;
+    background-color: #E6E7E8;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40px' height='40px' viewBox='0 0 40 40'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%232a363b' fill-opacity='0.05'%3E%3Cpath d='M0 38.59l2.83-2.83 1.41 1.41L1.41 40H0v-1.41zM0 1.4l2.83 2.83 1.41-1.41L1.41 0H0v1.41zM38.59 40l-2.83-2.83 1.41-1.41L40 38.59V40h-1.41zM40 1.41l-2.83 2.83-1.41-1.41L38.59 0H40v1.41zM20 18.6l2.83-2.83 1.41 1.41L21.41 20l2.83 2.83-1.41 1.41L20 21.41l-2.83 2.83-1.41-1.41L18.59 20l-2.83-2.83 1.41-1.41L20 18.59z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    box-shadow: -5px 5px 10px 2.5px #2A363B33;
+    cursor: pointer;
+    padding: 10px;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    margin: 0%;
+    opacity: 0.9;
+    transition-duration: 0.25s;    
+}
+
+.card:hover {
+    box-shadow: -10px 10px 20px 5px #2A363B33;
+    opacity: 1;
+    transition-duration: 0.25s;
+}
+
+.card-img-top {
+    position: relative;
+    height: 175px;
+    width: 100%;
+    background-image: url("../img/sample_english_tutorial_banner.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+    overflow: hidden; 
+    opacity: 0.8;
+}
+
+.card-text {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 700;
+    font-size: 15px;
+    color: #2A363B;
+}
+
+.card-emphasized-text {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 700;
+    font-size: 20px;
+    color: #2A363B;
+}
+
+footer {
+    position: relative;
+    height: auto;
+    width: 100%;
+    background-color: #CF4647;
+    padding: 0%;
+    margin: 0%;
+}
+
+.related-link-section {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.related-link-header {
+    position: relative;
+    text-align: left;
+    font-family: 'Roboto Mono', monospace;
+    color: #FFFFFFCC;
+    font-weight: 500;
+    font-size: 15px;
+    background-color: transparent;
+    padding: 0%;
+    padding-bottom: 7.5px;
+    margin: 0%;
+    margin-bottom: 10px;
+}
+
+.related-link-item {
+    position: relative;
+    background-color: transparent;
+    border: none;
+    padding: 0%;
+    padding-bottom: 7.5px;
+    margin: 0%;
+}
+
+.link {
+    text-align: left;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 300;
+    font-size: 10px;
+    color: #FFFFFFCC;
+}
+
+.link:hover {
+    color: #FFFFFF99;
+}
+
+.copyright-notice {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    height: calc(54.5px / 2);
+    width: 100%;
+    background: #2A363B;
+    padding: 0%;
+    margin: 0%;
+}
+
+.notice {
+    color: #FFFFFFCC;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 700;
+    font-size: 12.5px;
+    padding: 0%;
+    margin: 0%;
+}

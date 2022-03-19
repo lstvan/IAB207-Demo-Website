@@ -1,0 +1,447 @@
+html, body {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    padding: 0%;
+    margin: 0%;
+    background-color: #F8F6F6;
+}
+
+header {
+    position: relative;
+    height: auto;
+    width: 100%;
+    padding: 0%;
+    margin: 0%;
+}
+
+nav {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: auto;
+    width: 100%;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 400;
+    font-size: 15px;
+    background-color: #CF4647;
+    box-shadow: 0px 0px 10px 2.5px #2A363B99;
+    z-index: 1;
+}
+
+.navbar-brand {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 700;
+    font-size: 15px;
+    color: #2A363B;
+}
+
+.return-button {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 500;
+    font-size: 15px;
+    color: #E6E7E8;
+}
+
+.banner-image {
+    display: flex;
+    position: relative;
+    align-items: flex-end;
+    justify-content: center;
+    height: 400px;
+    background-color: #E6E7E8;
+    background-image: url("../img/sample_english_tutorial_banner.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    padding: 0%;
+    padding-bottom: 75px;
+    margin: 0%;
+    opacity: 0.8;
+    overflow: hidden;   
+}
+
+.category {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 500;
+    font-size: 20px;
+    color: #2A363B;
+}
+
+.name {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 700;
+    font-size: 30px;
+    color: #2A363B;
+}
+
+.host {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 500;
+    font-size: 17.5px;
+    color: #2A363B;
+}
+
+.emphasis {
+    color: #CF4647;
+}
+
+.description {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 400;
+    font-size: 15px;
+    color: #2A363B;
+}
+
+.comment-section-header {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 700;
+    font-size: 25px;
+    color: #2A363B;
+}
+
+.comment {
+    position: relative;
+    height: auto;
+    width: 100%;
+    background-color: #E6E7E8;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 0%;
+}
+
+.comment-head {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    width: 100%;
+    padding: 0%;
+    margin: 0%;   
+}
+
+.comment-head-border {
+    border: none;
+    border-bottom: solid;
+    border-width: 1px;
+    border-color: #2A363B99;
+}
+
+.comment-header {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 700;
+    font-size: 20px;
+    color: #2A363B;
+    padding: 0%;
+    margin: 0%;
+}
+
+.post-button {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    width: 85px;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 700;
+    font-size: 15px;
+    color: #E6E7E8;
+    padding: 0%;
+    margin: 0%;
+}
+
+.comment-input {
+    position: relative;
+    height: 120px;
+    width: 100%;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 400;
+    font-size: 15px;
+    color: #2A363B;
+    background-color: #D4D4D4;
+    border: none;    
+    border-radius: 10px;
+    padding: 10px;
+    padding-bottom: 7.5px;
+    margin: 0%;
+}
+
+.post-date {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 700;
+    font-size: 15px;
+    padding: 0%;
+    margin: 0%;
+    opacity: 0.8;
+}
+
+.content {
+    position: relative;
+    height: auto;
+    width: 100%;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 400;
+    font-size: 15px;
+    color: #2A363B;
+    border: none;
+    border-radius: 0%;
+    padding-top: 10px;
+    padding-bottom: 0px;
+    margin: 0%;
+}
+
+.creator-options {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: flex-end;
+    height: 50px;
+    width: 100%;
+    padding: 0%;
+    margin: 0%;
+}
+
+.option {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    width: 95px;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 700;
+    font-size: 15px;
+    padding: 0%;
+    margin: 0%;
+    margin-left: 10px;
+}
+
+.side-panel {
+    position: sticky;
+    top: 10px;
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+
+.sidepanel-container {
+    position: relative;
+    height: auto;
+    background-color: #E6E7E8;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 0%;
+}
+
+.ticket-display {
+    text-align: center;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 700;
+    font-size: 20px;
+    color: #2A363B; 
+}
+
+.remainder-count {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 700;
+    font-size: 27.5px;
+    color: #CF4647;
+}
+
+.status {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 100%;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 700;
+    font-size: 20px;
+    color: #2A363B;
+    background-color: #E6E7E8;
+    border-radius: 5px;
+}
+
+.container-header {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 700;
+    font-size: 15px;
+    color: #2A363B;
+    padding: 0%;
+    margin: 0%;
+}
+
+.detail-section {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: flex-start;
+    height: 45px;
+    width: 100%;
+}
+
+.detail {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 700;
+    font-size: 12.5px;
+    color: #2A363B;
+    padding: 0%;
+    margin: 0%;
+}
+
+.detail-text {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    height: 100%;
+    width: calc(100% - 17.5px); 
+}
+
+.map {
+    position: relative;
+    height: 150px;
+    width: 100%;
+    background-image: url("../img/placeholder_venue_map.png");
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+
+.order {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.input-label {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 700;
+    font-size: 17.5px;
+    color: #2A363B;
+    padding: 0%;
+    margin-right: auto;
+    padding: 0%;
+    margin: 0%;
+}
+
+.quantity-input {
+    position: relative;
+    height: 40px;
+    width: 70px;
+    text-align: center;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 700;
+    font-size: 20px;
+    color: #2A363B;
+    background-color: #D4D4D4;
+    padding: 0%;
+    margin-right: 5px;
+    margin-left: auto;
+}
+
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.order-start-button {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 100%;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 700;
+    font-size: 20px;
+    color: #E6E7E8;
+}
+
+.modal .modal-header, .modal-body, .modal-footer {
+    background-color: #E6E7E8;
+    border: none;
+}
+
+footer {
+    position: relative;
+    height: auto;
+    width: 100%;
+    background-color: #CF4647;
+    padding: 0%;
+    margin: 0%;
+}
+
+.related-link-section {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.related-link-header {
+    position: relative;
+    text-align: left;
+    font-family: 'Roboto Mono', monospace;
+    color: #FFFFFFCC;
+    font-weight: 500;
+    font-size: 15px;
+    background-color: transparent;
+    padding: 0%;
+    padding-bottom: 7.5px;
+    margin: 0%;
+    margin-bottom: 10px;
+}
+
+.related-link-item {
+    position: relative;
+    background-color: transparent;
+    border: none;
+    padding: 0%;
+    padding-bottom: 7.5px;
+    margin: 0%;
+}
+
+.link {
+    text-align: left;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 300;
+    font-size: 10px;
+    color: #FFFFFFCC;
+}
+
+.link:hover {
+    color: #FFFFFF99;
+}
+
+.copyright-notice {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    height: calc(54.5px / 2);
+    width: 100%;
+    background: #2A363B;
+    padding: 0%;
+    margin: 0%;
+}
+
+.notice {
+    color: #FFFFFFCC;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 700;
+    font-size: 12.5px;
+    padding: 0%;
+    margin: 0%;
+}

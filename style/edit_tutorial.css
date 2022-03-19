@@ -1,0 +1,367 @@
+html, body {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    padding: 0%;
+    margin: 0%;
+    background-color: #F8F6F6;
+}
+
+header {
+    position: relative;
+    height: auto;
+    width: 100%;
+    padding: 0%;
+    margin: 0%;
+}
+
+nav {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: auto;
+    width: 100%;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 400;
+    font-size: 15px;
+    background-color: #CF4647;
+    box-shadow: 0px 0px 10px 2.5px #2A363B99;
+    z-index: 1;
+}
+
+.navbar-brand {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 700;
+    font-size: 15px;
+    color: #2A363B;
+}
+
+
+
+.return-button {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 500;
+    font-size: 15px;
+    color: #E6E7E8;
+}
+
+.primary-header-line {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 700;
+    font-size: 35px;
+    color: #2A363B;
+}
+
+.secondary-header-line {
+    letter-spacing: 2.5px;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 300;
+    font-size: 20px;
+    color: #2A363B;
+    padding-bottom: 0%;
+    margin: 0%;
+}
+
+.banner-image-upload  {
+    display: flex;
+    position: relative;
+    align-items: flex-end;
+    justify-content: center;
+    height: 400px;
+    width: auto;
+    background-color: #E6E7E8;
+    background-image: url("../img/placeholder_banner.png");
+    background-size: 1024px 512px;
+    background-position: center;
+    background-repeat: repeat;
+    border-radius: 10px;
+    padding: 0%;
+    padding-bottom: 75px;
+    margin: 0%;
+    overflow: hidden; 
+}
+
+.image-upload-prompt {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 700;
+    font-size: 25px;
+    color: #2A363B;
+    opacity: 0.8;
+}
+
+.emphasis {
+    color: #CF4647;
+}
+
+.input-label {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 700;
+    font-size: 17.5px;
+}
+
+.name-input {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+    height: 40px;
+    width: 400px;
+    padding: 0%;
+    margin: 0%;
+}
+
+.text-input {
+    position: relative;
+    height: 100%;
+    width: 85%;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 400;
+    font-size: 12.5px;
+    color: #2A363B;
+    background-color: #E6E7E8;
+    border: none;
+    border-bottom: solid;
+    border-width: 5px;
+    border-color: #939598;
+    border-radius: 5px 0px 0px 5px;
+    padding: 10px;
+    padding-bottom: 7.5px;
+    margin: 0%;
+}
+
+
+@media (min-width: 990px) {
+    .resize-input {
+        max-width: none;
+    }
+}
+
+@media (max-width: 990px) {
+    .resize-input {
+        min-width: 100%;
+    }
+}
+
+.input-indicator {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 15%;
+    background-color: #D1D1D1;
+    border-radius: 0px 5px 5px 0px;
+    border-bottom: solid;
+    border-width: 5px;
+    border-color: #939598;
+    padding: 0%;
+    padding-top: 2.5px;
+    margin: 0%; 
+}
+
+.character-count {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 700;
+    font-size: 12.5px;
+    color: #2A363B;
+    padding: 0%;
+    margin: 0%;
+}
+
+.select-input {
+    position: relative;
+    height: 40px;
+    width: 300px;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 400;
+    font-size: 12.5px;
+    color: #2A363B;
+    background-color: #E6E7E8;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    padding: 10px;
+    margin: 0%;
+}
+
+.description-input {
+    position: relative;
+    height: 200px;
+    width: 100%;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 400;
+    font-size: 12.5px;
+    color: #2A363B;
+    background-color: #E6E7E8;
+    border-radius: 10px;
+    border-bottom: solid;
+    border-width: 5px;
+    border-color: #939598;
+    padding: 10px;
+    padding-bottom: 7.5px;
+    margin: 0%;
+    border: none;
+}
+
+.available-tickets {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+    height: 40px;
+    width: 300px;
+    padding: 0%;
+    margin: 0%;
+}
+
+.ticket-input {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    text-align: center; 
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 400;
+    font-size: 12.5px;
+    color: #2A363B;
+    background-color: #E6E7E8;
+    border: none;
+    border-radius: 5px;
+    border-bottom: solid;
+    border-width: 5px;
+    border-color: #939598;
+    padding: 10px;
+    padding-bottom: 7.5px;
+    margin: 0%;
+}
+
+.venue-location {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+    height: 40px;
+    width: 400px;
+    padding: 0%;
+    margin: 0%;
+}
+
+.autocomplete-location {
+    position: relative;
+    height: 35px;
+    width: 400px;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 400;
+    font-size: 12.5px;
+    color: #2A363B;
+    background-color: #E6E7E8;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    padding: 5px;
+    margin: 0%;
+    margin-top: 10px;
+    margin-bottom: 10px;   
+}
+
+.location-map {
+    position: relative;
+    height: 200px;
+    width: 400px;
+    background-image: url("../img/placeholder_venue_map.png");
+    background-size: 100% auto;
+    background-position: center;
+    border-radius: 10px;
+    padding: 0%;
+    margin: 0%;
+}
+
+.commencement-input {
+    position: relative;
+    height: 40px;
+    width: 300px;
+    text-align: center;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 400;
+    font-size: 12.5px;
+    color: #2A363B;
+    background-color: #E6E7E8;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    padding: 10px;
+    margin: 0%;  
+}
+
+footer {
+    position: relative;
+    height: auto;
+    width: 100%;
+    background-color: #CF4647;
+    padding: 0%;
+    margin: 0%;
+}
+
+.related-link-section {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.related-link-header {
+    position: relative;
+    text-align: left;
+    font-family: 'Roboto Mono', monospace;
+    color: #FFFFFFCC;
+    font-weight: 500;
+    font-size: 15px;
+    background-color: transparent;
+    padding: 0%;
+    padding-bottom: 7.5px;
+    margin: 0%;
+    margin-bottom: 10px;
+}
+
+.related-link-item {
+    position: relative;
+    background-color: transparent;
+    border: none;
+    padding: 0%;
+    padding-bottom: 7.5px;
+    margin: 0%;
+}
+
+.link {
+    text-align: left;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 300;
+    font-size: 10px;
+    color: #FFFFFFCC;
+}
+
+.link:hover {
+    color: #FFFFFF99;
+}
+
+.copyright-notice {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    height: calc(54.5px / 2);
+    width: 100%;
+    background: #2A363B;
+    padding: 0%;
+    margin: 0%;
+}
+
+.notice {
+    color: #FFFFFFCC;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 700;
+    font-size: 12.5px;
+    padding: 0%;
+    margin: 0%;
+}

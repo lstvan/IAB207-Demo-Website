@@ -1,0 +1,564 @@
+<!doctype html>
+
+<html lang="en">
+
+  <head>
+
+    <!-- metadata -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Find-A-Tute: General English</title>
+
+    <!-- bootstrap source -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous"/>
+
+    <!-- google fonts source-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+    <!-- stylesheets source-->
+    <link href="./style/view_tutorial.css" rel="stylesheet" type="text/css"/>
+
+    <!-- favicons source -->
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/glasses_logo.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/glasses_logo.svg">
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/glasses_logo.svg">
+    
+  </head>
+
+  <body>
+
+    <!-- header -->
+    <header class="bg-light border-bottom border-5">
+
+      <!-- navigation bar -->
+      <nav class="navbar navbar-inverse navbar-expand-md position-absolute navbar-dark">
+        <div class="container-xl">
+
+          <!-- branding/landing page link -->
+          <a class="navbar-brand d-flex align-items-center text-light" href="./index.html">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25px" height="25px" fill="currentColor" class="bi bi-eyeglasses me-2" viewBox="0 0 16 16">
+                <path d="M4 6a2 2 0 1 1 0 4 2 2 0 0 1 0-4zm2.625.547a3 3 0 0 0-5.584.953H.5a.5.5 0 0 0 0 1h.541A3 3 0 0 0 7 8a1 1 0 0 1 2 0 3 3 0 0 0 5.959.5h.541a.5.5 0 0 0 0-1h-.541a3 3 0 0 0-5.584-.953A1.993 1.993 0 0 0 8 6c-.532 0-1.016.208-1.375.547zM14 8a2 2 0 1 1-4 0 2 2 0 0 1 4 0z"/>
+            </svg>
+            Find-A-Tute
+          </a>
+            
+          <!-- collapsed navbar expand/collapse toggle -->
+          <button class="navbar-toggler shadow-none" type="button" data-toggle="collapse" data-target="#navbar-collapse">
+            <span class="navbar-toggler-icon shadow-none"></span>
+          </button>
+
+          <!-- navbar links -->
+          <div class="collapse navbar-collapse justify-content-end" id="navbar-collapse">
+            <ul class="navbar-nav">
+
+              <!-- landing page search link -->
+              <li class="nav-item me-4">
+                <a class="nav-link" href="./index.html">SEARCH</a>
+              </li>
+
+              <!-- landing page subject link dropdown -->
+              <li class="nav-item dropdown me-4">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  SUBJECTS
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  
+                  <!-- landing page english subject link -->
+                  <a class="dropdown-item" href="./index.html#subject_english">ENGLISH</a>
+
+                  <!-- landing page math subject link -->
+                  <a class="dropdown-item" href="./index.html#subject_math">MATH</a>
+
+                  <!-- landing page science subject link -->
+                  <a class="dropdown-item" href="./index.html#subject_science">SCIENCE</a>
+
+                  <!-- landing page i.t subject link -->
+                  <a class="dropdown-item" href="./index.html#subject_it">I.T</a>
+
+                  <!-- landing page art subject link -->
+                  <a class="dropdown-item" href="./index.html#subject_art">ART</a>
+
+                  <!-- landing page finance subject link -->
+                  <a class="dropdown-item" href="./index.html#subject_finance">FINANCE</a>
+
+                  <!-- landing page film subject link -->
+                  <a class="dropdown-item" href="./index.html#subject_film">FILM</a>
+
+                  <!-- landing page business subject link -->
+                  <a class="dropdown-item" href="./index.html#subject_business">BUSINESS</a>
+
+                </div>
+              </li>
+
+              <!-- register new tutorial page link -->
+              <li class="nav-item me-4">
+                <a class="nav-link" href="./edit_tutorial.html">NEW TUTORIAL</a>
+              </li> 
+
+              <!-- booking history page link -->
+              <li class="nav-item">
+                <a class="nav-link" href="./view_bookings.html">MY BOOKINGS</a>
+              </li>   
+
+            </ul> 
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- main content -->
+    <main>
+      <div class="container-xl pt-5">
+
+        <!-- return button -->
+        <div class="row mt-5">
+          <div class="col-12">
+            <button type="button" onclick="window.history.back();" class="btn btn-primary return-button">< BACK</button>
+          </div>
+        </div>
+
+        <!-- tutorial banner image -->
+        <div class="row mt-3">
+          <div class="col-12">
+              <div class="banner-image"></div>
+          </div>
+        </div>
+
+        <!-- tutorial page content -->
+        <div class="row mt-2 mt-lg-4">
+          <div class="col-12 col-lg-9 order-last order-lg-first">
+            <div class="container-xl p-0">
+
+              <!-- tutorial details -->
+              <div class="row">
+
+                <!-- tutorial category -->
+                <div class="col-12 mb-2">
+                  <h3 class="category">ENGLISH</h3>
+                </div>
+
+                <!-- tutorial name -->
+                <div class="col-12 mb-1">
+                  <h3 class="name">General English</h3>
+                </div>
+
+                <!-- tutorial host name -->
+                <div class="col-12 mb-3">
+                  <h2 class="host">
+                    Hosted By: <span class="emphasis">Norman Osborn</span>
+                  </h2>
+                </div>
+
+              </div>
+
+              <!-- tutorial description -->
+              <div class="row">
+                <p class="description mb-3">
+                  <b>Tutorial description...</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ornare quis mi semper tincidunt. Vivamus vehicula ex nisl, a auctor massa sollicitudin ullamcorper. Sed non sodales velit, in bibendum lacus. Nullam nec tempor ligula. Nulla facilisi. Aenean scelerisque nibh vitae augue vulputate cursus. Mauris ullamcorper gravida mauris et consectetur. In hac habitasse platea dictumst. Suspendisse id tellus lacinia, pellentesque purus a, luctus tellus. Phasellus auctor tempus diam, a consequat massa commodo in. Vivamus id hendrerit felis, nec venenatis urna. Cras neque orci, ultricies et sapien nec, suscipit tristique lorem. Nulla sit amet orci at justo eleifend fermentum tempus et justo. Sed aliquet molestie libero eu consectetur.
+                  <br/>
+                  <br/>
+                  Ut hendrerit ac tellus sed luctus. Vivamus cursus sit amet libero sit amet efficitur. Maecenas efficitur lectus felis, ac consequat massa posuere ut. Praesent quis metus gravida, aliquam nunc sed, blandit orci. Nullam hendrerit commodo nisi non vehicula. Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer feugiat ligula in est pellentesque ultricies.
+                  <br/>
+                  <br/>
+                  Fusce a leo vitae nisl efficitur semper. Sed finibus dolor et massa vehicula aliquam. Morbi in elit sodales, ultrices leo sed, feugiat nibh. Duis mattis porta dui sed rhoncus. Suspendisse potenti. Etiam condimentum metus lobortis suscipit blandit. Donec viverra aliquam rutrum. Proin ac sollicitudin ex. Suspendisse at turpis erat. Curabitur arcu sapien, luctus quis laoreet a, elementum vitae nibh. Suspendisse at ipsum nec metus sollicitudin dapibus. Fusce a dolor et massa tristique gravida. Nullam porta tincidunt dolor, sed vulputate lorem cursus eget. Nunc mattis suscipit nisl eu tristique.
+                </p>
+              </div>
+
+              <!-- comment section heading -->
+              <div class="row">
+                <div class="col-12 mt-3 mb-1">
+                  <h3 class="comment-section-header">User Comments:</h3>
+                </div>
+              </div>
+
+              <!-- new comment field -->
+              <div class="row">
+                <div class="col-12 mb-1 mt-3">
+                    <div class="comment">
+
+                      <!-- comment head -->
+                      <div class="comment-head mb-2 pb-2">
+
+                        <!-- comment header -->
+                        <h3 class="comment-header">Add New Comment:</h3>
+
+                        <!-- post button -->
+                        <button type="button" class="btn btn-primary post-button">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="15px" height="15px" fill="currentColor" class="bi bi-plus-lg me-2" viewBox="0 0 16 16">
+                            <path d="M8 0a1 1 0 0 1 1 1v6h6a1 1 0 1 1 0 2H9v6a1 1 0 1 1-2 0V9H1a1 1 0 0 1 0-2h6V1a1 1 0 0 1 1-1z"/>
+                          </svg>
+                          POST
+                        </button>
+
+                      </div>
+
+                      <!-- comment text input -->
+                      <textarea class="form-control comment-input" id="new_comment"></textarea> 
+
+                    </div>
+                </div>
+              </div>
+
+              <!-- owned comment -->
+              <div class="row">
+                <div class="col-12 mb-1 mt-3">
+                  <div class="comment">
+
+                    <!-- comment head -->
+                    <div class="comment-head comment-head-border mb-2">
+
+                      <!-- comment creator -->
+                      <h3 class="comment-header">{User Name}</h3>
+
+                      <!-- comment post date -->
+                      <h4 class="post-date">Post Date: 24/08/2021</h4>
+
+                    </div>
+
+                    <!-- comment content -->
+                    <p class="content mb-0">
+                      <b>Comment Content...</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ornare quis mi semper tincidunt. Vivamus vehicula ex nisl, a auctor massa sollicitudin ullamcorper. Sed non sodales velit, in bibendum lacus.
+                    </p>
+
+                    <!-- creator options -->
+                    <div class="creator-options mb-0">
+
+                      <!-- edit comment button -->
+                      <button type="button" class="btn btn-secondary option mr-5">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="15px" height="15px" fill="currentColor" class="bi bi-pencil me-2" viewBox="0 0 16 16">
+                          <path d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207 11.207 2.5zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293l6.5-6.5zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z"/>
+                        </svg>
+                        EDIT
+                      </button>
+
+                      <!-- remove comment button -->
+                      <button type="button" class="btn btn-secondary option">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="15px" height="15px" fill="currentColor" class="bi bi-trash me-2" viewBox="0 0 16 16">
+                          <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z"/>
+                          <path fill-rule="evenodd" d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z"/>
+                        </svg>
+                        REMOVE
+                      </button>
+
+                    </div>
+                      
+                  </div>
+                </div>
+              </div>
+
+              <!-- comment -->
+              <div class="row">
+                <div class="col-12 mb-1 mt-3">
+                  <div class="comment">
+
+                    <!-- comment head -->
+                    <div class="comment-head comment-head-border mb-2">
+
+                      <!-- comment creator -->
+                      <h3 class="comment-header">{User Name}</h3>
+
+                      <!-- comment post date -->
+                      <h4 class="post-date">Post Date: 24/08/2021</h4>
+                    </div>
+
+                    <!-- comment content -->
+                    <p class="content"><b>Comment Content...</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ornare quis mi semper tincidunt. Vivamus vehicula ex nisl, a auctor massa sollicitudin ullamcorper. Sed non sodales velit, in bibendum lacus.</p>
+                        
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+
+          <!-- side panel content -->
+          <div class="col-12 col-lg-3 d-flex align-items-start">
+            <div class="container-lg side-panel p-0">
+              
+              <!-- general details container -->
+              <div class="row">
+                <div class="col-12 bg-transparent p-1 m-0 mb-3">
+
+                  <!-- ticket display -->
+                  <h3 class="ticket-display mb-2">
+                    <span class="remainder-count">28</span>/30 Tickets
+                  </h3>
+
+                  <!-- tutorial status-->
+                  <h3 class="status">UPCOMING</h3>
+
+                </div>
+              </div>
+
+              <!-- venue details container -->
+              <div class="row">
+                <div class="col-12 col-sm-6 col-lg-12 p-1 m-0 mb-3">
+                  <div class="sidepanel-container">
+
+                    <!-- header -->
+                    <h4 class="container-header mb-2">VENUE DETAILS:</h4>
+
+                    <!-- commencement section -->
+                    <div class="detail-section mb-2">
+
+                      <!-- commencement icon -->
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" class="bi bi-clock me-2" viewBox="0 0 16 16">
+                        <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
+                        <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"/>
+                      </svg>
+
+                      <!-- commencement text -->
+                      <div class="detail-text">
+
+                        <!-- commencement time -->
+                        <h5 class="detail">09:00 AM</h5>
+
+                        <!-- commencement date -->
+                        <h5 class="detail">12th September 2021</h5>
+                      </div>
+
+                    </div>
+
+                    <!-- venue section -->
+                    <div class="detail-section mb-2">
+
+                      <!-- venue icon -->
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" class="bi bi-geo-alt me-2" viewBox="0 0 16 16">
+                        <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+                        <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                      </svg>
+
+                      <!-- venue text -->
+                      <div class="detail-text">
+
+                        <!-- venue room -->
+                        <h5 class="detail">ROOM S518</h5>
+
+                        <!-- venue address -->
+                        <h5 class="detail">QUT GARDENS POINT CAMPUS</h5>
+
+                      </div>
+
+                    </div>
+
+                    <!-- venue map -->
+                    <div class="map"></div>
+
+                  </div>
+                </div>
+              
+              <!-- order content container -->
+              <div class="col-12 col-sm-6 col-lg-12 p-1 m-0 mb-3">
+                <div class="sidepanel-container">
+                  <!-- header -->
+                  <h4 class="container-header mb-2">BOOK TICKETS:</h4>
+
+                  <!-- order field -->        
+                  <div class="order mb-3">     
+
+                    <!-- quantity input label -->
+                    <h3 class="input-label">Quantity:</h3>
+
+                    <!-- quantity input -->
+                    <input type="number" class="form-control quantity-input" id="order_input" placeholder="000" autocomplete="off">
+                    
+                    <!-- quantity limit label -->
+                    <h4 class="input-label">/28</h4>
+                  </div>    
+
+                  <!-- order button -->
+                  <button type="button" data-toggle="modal" data-target="#order_confirm_modal" class="btn btn-primary order-start-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" class="bi bi-receipt me-2" viewBox="0 0 16 16">
+                      <path d="M1.92.506a.5.5 0 0 1 .434.14L3 1.293l.646-.647a.5.5 0 0 1 .708 0L5 1.293l.646-.647a.5.5 0 0 1 .708 0L7 1.293l.646-.647a.5.5 0 0 1 .708 0L9 1.293l.646-.647a.5.5 0 0 1 .708 0l.646.647.646-.647a.5.5 0 0 1 .708 0l.646.647.646-.647a.5.5 0 0 1 .801.13l.5 1A.5.5 0 0 1 15 2v12a.5.5 0 0 1-.053.224l-.5 1a.5.5 0 0 1-.8.13L13 14.707l-.646.647a.5.5 0 0 1-.708 0L11 14.707l-.646.647a.5.5 0 0 1-.708 0L9 14.707l-.646.647a.5.5 0 0 1-.708 0L7 14.707l-.646.647a.5.5 0 0 1-.708 0L5 14.707l-.646.647a.5.5 0 0 1-.708 0L3 14.707l-.646.647a.5.5 0 0 1-.801-.13l-.5-1A.5.5 0 0 1 1 14V2a.5.5 0 0 1 .053-.224l.5-1a.5.5 0 0 1 .367-.27zm.217 1.338L2 2.118v11.764l.137.274.51-.51a.5.5 0 0 1 .707 0l.646.647.646-.646a.5.5 0 0 1 .708 0l.646.646.646-.646a.5.5 0 0 1 .708 0l.646.646.646-.646a.5.5 0 0 1 .708 0l.646.646.646-.646a.5.5 0 0 1 .708 0l.646.646.646-.646a.5.5 0 0 1 .708 0l.509.509.137-.274V2.118l-.137-.274-.51.51a.5.5 0 0 1-.707 0L12 1.707l-.646.647a.5.5 0 0 1-.708 0L10 1.707l-.646.647a.5.5 0 0 1-.708 0L8 1.707l-.646.647a.5.5 0 0 1-.708 0L6 1.707l-.646.647a.5.5 0 0 1-.708 0L4 1.707l-.646.647a.5.5 0 0 1-.708 0l-.509-.51z"/>
+                      <path d="M3 4.5a.5.5 0 0 1 .5-.5h6a.5.5 0 1 1 0 1h-6a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h6a.5.5 0 1 1 0 1h-6a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h6a.5.5 0 1 1 0 1h-6a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5zm8-6a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5z"/>
+                    </svg>
+                    BOOK NOW
+                  </button>
+
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+  
+        </div>
+
+      </div>
+      
+      <!-- order confirmation modal -->
+      <div class="modal fade" id="order_confirm_modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+
+            <!-- modal header -->
+            <div class="modal-header pb-0">
+              <button type="button" data-dismiss="modal" class="btn btn-primary return-button">< BACK</button>
+            </div>
+
+            <!-- modal body content -->
+            <div class="modal-body">
+              
+              <!-- header -->
+              <h4 class="container-header mb-2">CONFIRM BOOKING:</h4>
+
+              <!-- order field -->        
+              <div class="order mb-3">     
+
+                <!-- quantity input label -->
+                <h3 class="input-label">Entered Quantity:</h3>
+
+                <!-- quantity input -->
+                <input type="number" class="form-control quantity-input" id="order_input" placeholder="000" autocomplete="off">
+                
+                <!-- quantity limit label -->
+                <h4 class="input-label">/28</h4>
+              </div>    
+
+              <!-- order button -->
+              <button type="button" data-dismiss="modal" class="btn btn-primary order-start-button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" class="bi bi-receipt me-2" viewBox="0 0 16 16">
+                  <path d="M1.92.506a.5.5 0 0 1 .434.14L3 1.293l.646-.647a.5.5 0 0 1 .708 0L5 1.293l.646-.647a.5.5 0 0 1 .708 0L7 1.293l.646-.647a.5.5 0 0 1 .708 0L9 1.293l.646-.647a.5.5 0 0 1 .708 0l.646.647.646-.647a.5.5 0 0 1 .708 0l.646.647.646-.647a.5.5 0 0 1 .801.13l.5 1A.5.5 0 0 1 15 2v12a.5.5 0 0 1-.053.224l-.5 1a.5.5 0 0 1-.8.13L13 14.707l-.646.647a.5.5 0 0 1-.708 0L11 14.707l-.646.647a.5.5 0 0 1-.708 0L9 14.707l-.646.647a.5.5 0 0 1-.708 0L7 14.707l-.646.647a.5.5 0 0 1-.708 0L5 14.707l-.646.647a.5.5 0 0 1-.708 0L3 14.707l-.646.647a.5.5 0 0 1-.801-.13l-.5-1A.5.5 0 0 1 1 14V2a.5.5 0 0 1 .053-.224l.5-1a.5.5 0 0 1 .367-.27zm.217 1.338L2 2.118v11.764l.137.274.51-.51a.5.5 0 0 1 .707 0l.646.647.646-.646a.5.5 0 0 1 .708 0l.646.646.646-.646a.5.5 0 0 1 .708 0l.646.646.646-.646a.5.5 0 0 1 .708 0l.646.646.646-.646a.5.5 0 0 1 .708 0l.646.646.646-.646a.5.5 0 0 1 .708 0l.509.509.137-.274V2.118l-.137-.274-.51.51a.5.5 0 0 1-.707 0L12 1.707l-.646.647a.5.5 0 0 1-.708 0L10 1.707l-.646.647a.5.5 0 0 1-.708 0L8 1.707l-.646.647a.5.5 0 0 1-.708 0L6 1.707l-.646.647a.5.5 0 0 1-.708 0L4 1.707l-.646.647a.5.5 0 0 1-.708 0l-.509-.51z"/>
+                  <path d="M3 4.5a.5.5 0 0 1 .5-.5h6a.5.5 0 1 1 0 1h-6a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h6a.5.5 0 1 1 0 1h-6a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h6a.5.5 0 1 1 0 1h-6a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5zm8-6a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5z"/>
+                </svg>
+                CONFIRM BOOKING
+              </button>
+
+            </div>
+
+            <!-- modal footer -->
+            <div class="modal-footer p-1"></div>
+
+          </div>
+        </div>
+      </div>
+
+    </main>
+
+    <!-- footer -->
+    <footer class="mt-5">
+
+      <!-- related subjects section -->
+      <div>
+        <div class="container-xl">
+          <div class="row ps-0 pe-0 p-5 pb-0">
+
+            <!-- related subjects section -->
+            <div class="col-lg-3 d-flex justify-content-center col-6 mb-5 related-link-section">
+              <ul class="list-group list-group-flush">
+
+                <!-- related subjects header -->
+                <li class="list-group-item related-link-header">
+                  Core Subjects:
+                </li>
+
+                <!-- related subjects link -->
+                <li class="list-group-item related-link-item">
+                  <a href="./index.html#subject_english" class="link">English</a>
+                </li>
+
+                <!-- related subjects link -->
+                <li class="list-group-item related-link-item">
+                  <a href="./index.html#subject_math" class="link">Math</a>
+                </li>
+
+                <!-- related subjects link -->
+                <li class="list-group-item related-link-item">
+                  <a href="./index.html#subject_science" class="link">Science</a>
+                </li>
+                
+              </ul>
+            </div>
+
+            <!-- related subjects section -->
+            <div class="col-lg-3 col-6  mb-5 d-flex justify-content-center related-link-section">
+              <ul class="list-group list-group-flush">
+
+                <!-- related subjects header -->
+                <li class="list-group-item related-link-header">
+                  Arts Subjects:
+                </li>
+
+                <!-- related subjects link -->
+                <li class="list-group-item related-link-item">
+                  <a href="./index.html#subject_art" class="link">Art</a>
+                </li>
+
+                <!-- related subjects link -->
+                <li class="list-group-item related-link-item">
+                  <a href="./index.html#subject_film" class="link">Film</a>
+                </li>
+
+              </ul>
+            </div>
+
+            <!-- related subjects section -->
+            <div class="col-lg-3 col-6  mb-5 d-flex justify-content-center related-link-section">
+              <ul class="list-group list-group-flush">
+
+                <!-- related subjects link -->
+                <li class="list-group-item related-link-header">
+                  Business Subjects:
+                </li>
+
+                <!-- related subjects link -->
+                <li class="list-group-item related-link-item">
+                  <a href="./index.html#subject_business" class="link">Business</a>
+                </li>
+
+                <!-- related subjects link -->
+                <li class="list-group-item related-link-item">
+                  <a href="./index.html#subject_finance" class="link">Finance</a>
+                </li>
+
+              </ul>
+            </div>
+
+            <!-- related subjects section -->
+            <div class="col-lg-3 col-6  mb-5 d-flex justify-content-center related-link-section">
+              <ul class="list-group list-group-flush">
+                
+                <!-- related subjects link -->
+                <li class="list-group-item related-link-header">
+                  S.T.E.M Subjects:
+                </li>
+
+                <!-- related subjects link -->
+                <li class="list-group-item related-link-item">
+                  <a href="./index.html#subject_science" class="link">Science</a>
+                </li>
+
+                <!-- related subjects link -->
+                <li class="list-group-item related-link-item">
+                  <a href="./index.html#subject_it" class="link">I.T</a>
+                </li>
+
+                <!-- related subjects link -->
+                <li class="list-group-item related-link-item">
+                  <a href="./index.html#subject_math" class="link">Math</a>
+                </li>
+
+              </ul> 
+            </div>
+            
+        </div>
+      </div>
+
+      <!-- copyright notice -->
+      <div class="copyright-notice">
+        <h6 class="notice">[©] Find-A-Tute 2021</h6>
+      </div>
+
+    </footer>
+
+  </body>
+
+  <!-- scripts source -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+</html>
